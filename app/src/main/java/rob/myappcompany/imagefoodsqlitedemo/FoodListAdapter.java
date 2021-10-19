@@ -54,7 +54,7 @@ public class FoodListAdapter extends BaseAdapter {
 
             holder.txtName = (TextView) row.findViewById(R.id.txtName);
             holder.txtPrice = (TextView) row.findViewById(R.id.txtPrice);
-            holder.imageView = (ImageView) row.findViewById(R.id.imageView);
+            holder.imageView = (ImageView) row.findViewById(R.id.imageView2);
 
             row.setTag(holder);
         }else {
@@ -62,6 +62,7 @@ public class FoodListAdapter extends BaseAdapter {
         }
 
         Food food = foodList.get(position);
+
         holder.txtName.setText(food.getName());
         holder.txtPrice.setText(food.getPrice());
 
